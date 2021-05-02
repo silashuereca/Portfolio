@@ -1,34 +1,37 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        my-blog
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
+  <div class="bg-gray-50 h-screen lg:flex items-center">
+    <!-- Hero section -->
+    <div
+      class="max-w-7xl m-auto h-3/4 grid grid-cols-1 lg:grid-cols-2 p-5 md:p-10 lg:p-20"
+    >
+      <div>
+        <h1
+          class="text-5xl md:text-6xl lg:text-7xl font-bold text-center lg:text-left"
         >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
+          A place to learn more about <span class="text-green-500">Vue</span>
+        </h1>
+        <p
+          class="text-lg sm:text-2xl mt-4 text-center lg:text-left text-gray-600"
         >
-          GitHub
-        </a>
+          Helpful documentation on how to solve certain edge cases, build
+          complex projects, and scaling large applications.
+        </p>
+        <div class="w-full text-center mt-8 lg:text-left">
+          <a
+            class="transition cursor-pointer w-10 border border-green-500 p-3 rounded hover:bg-green-500 hover:text-white"
+            >GET STARTED</a
+          >
+        </div>
+      </div>
+      <div class="w-full h-auto">
+        <HeroSvg />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style>
@@ -47,16 +50,8 @@ export default {}
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
